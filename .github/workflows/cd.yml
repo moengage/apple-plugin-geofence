@@ -45,13 +45,13 @@ jobs:
         fetch-depth: 0
         fetch-tags: true
 
-    - name: Create release
-      uses: ./scripts/actions/ios-sdk-client-release
-      with:
-        dir: source
-      env:
-        GITHUB_TOKEN: ${{ secrets.SDK_BOT_ACCESS_TOKEN }}
-        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-        MO_RELEASE_TICKET: ${{ inputs.ticket }}
-        MO_SDK_DEPENDENCY_VERSION: ${{ inputs.sdk-version }}
-        MO_PLUGINBASE_DEPENDENCY_VERSION: ${{ inputs.base-version }}
+    # - name: Create release
+    #   uses: ./scripts/actions/ios-sdk-client-release
+    #   with:
+    #     dir: source
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.SDK_BOT_ACCESS_TOKEN }}
+    #     COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+    #     MO_RELEASE_TICKET: ${{ inputs.ticket }}
+    #     MO_SDK_DEPENDENCY_VERSION: ${{ inputs.sdk-version }}
+    #     MO_PLUGINBASE_DEPENDENCY_VERSION: ${{ inputs.base-version }}
