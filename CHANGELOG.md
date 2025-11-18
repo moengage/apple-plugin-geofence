@@ -1,8 +1,10 @@
-# Release Date
+# 18-11-2025
 
-## Release Version
+## 4.7.0
 
-- [minor] Added Swift Package Manager distribution support
+- Updated MoEngage-iOS-SDK to 10.08.0
+- Updated MoEngagePluginBase to 6.7.0
+- Added Swift Package Manager distribution support
 
 # 17-10-2025
 
