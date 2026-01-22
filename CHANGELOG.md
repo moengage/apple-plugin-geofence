@@ -1,3 +1,9 @@
+# Release Date
+
+## Release Version
+
+- [NA] Updated CD token usage
+
 # 18-11-2025
 
 ## 4.7.0
