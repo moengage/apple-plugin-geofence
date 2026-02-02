@@ -14,8 +14,8 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/moengage/apple-sdk.git", exact: "10.08.0"),
-        .package(url: "https://github.com/moengage/iOS-PluginBase.git", exact: "6.7.0"),
+        .package(url: "https://github.com/moengage/apple-sdk.git", exact: "10.10.0"),
+        .package(url: "https://github.com/moengage/iOS-PluginBase.git", exact: "6.8.0"),
         // For development
         // .package(path: "../iOS-PluginBase")
     ],

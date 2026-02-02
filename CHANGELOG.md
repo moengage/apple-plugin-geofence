@@ -1,8 +1,10 @@
-# Release Date
+# 02-02-2026
 
-## Release Version
+## 4.8.0
 
-- [NA] Updated CD token usage
+- Updated MoEngage-iOS-SDK to 10.10.0
+- Updated MoEngagePluginBase to 6.8.0
+- Updated CD token usage
 
 # 18-11-2025
 
