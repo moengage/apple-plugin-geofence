@@ -87,25 +87,25 @@ https://raw.githubusercontent.com/moengage/mobile-sdk-contracts/<contractBranch>
 
 First determine whether the contract file is new or modified:
 
-| File status | Meaning |
- --- || --- | --- || --- | --- || --- |
- --- || **New file** added | New method — full bridge implementation needed (Phase 2 required) |
-| **Existing file** modified | Payload change only — no new native API, no new bridge method |
+| File status                | Meaning                                                           |
+| -------------------------- | ----------------------------------------------------------------- |
+| **New file** added         | New method — full bridge implementation needed (Phase 2 required) |
+| **Existing file** modified | Payload change only — no new native API, no new bridge method     |
 
 For **payload changes on existing files**:
 
-| Modified file | Implementation change |
- --- || --- | --- || --- | --- || --- |
- --- || `hybridToNative` modified | Hybrid sends additional fields → update existing bridge method to extract and pass new fields to native |
-| `nativeToHybrid` modified | Native sends additional fields back → update response/event builder to include new fields |
+| Modified file             | Implementation change                                                                                   |
+| ------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `hybridToNative` modified | Hybrid sends additional fields → update existing bridge method to extract and pass new fields to native |
+| `nativeToHybrid` modified | Native sends additional fields back → update response/event builder to include new fields               |
 
 For payload changes, **skip Phase 2** and go directly to Phase 3.
 
 For new files, classify and continue to Phase 2:
 
-| New contract files | Classification |
- --- || --- | --- || --- | --- || --- |
- --- || `hybridToNative` only | **Fire-and-forget** — no response expected |
+| New contract files                         | Classification                                  |
+| ------------------------------------------ | ----------------------------------------------- |
+| `hybridToNative` only                      | **Fire-and-forget** — no response expected      |
 | both `hybridToNative` and `nativeToHybrid` | **Expects response** — type resolved in Phase 2 |
 
 Print a `### Contract Summary` with method name(s), file status (new/modified), payload schema, and classification.
@@ -223,9 +223,9 @@ Add the new `@objc public func` in the bridge file.
 
 Read the relevant example file before generating code:
 
-| Type | Example file |
- --- || --- | --- || --- | --- || --- |
- --- || Type 1 — fire-and-forget | `examples/Type1_FireAndForget.swift` |
+| Type                        | Example file                             |
+| --------------------------- | ---------------------------------------- |
+| Type 1 — fire-and-forget    | `examples/Type1_FireAndForget.swift`     |
 | Type 2 — completion handler | `examples/Type2_CompletionHandler.swift` |
 
 For **Type 4**, two things must be created:
