@@ -1,12 +1,12 @@
 {
   "name": "MoEngagePluginGeofence",
   "postBuild": "Utilities/post_build.rb",
-  "sdkVerMin": "10.14.0",
-  "pluginbaseVerMin": "6.10.0",
+  "sdkVerMin": "11.00.0",
+  "pluginbaseVerMin": "7.00.0",
   "packages": [
     {
       "name": "MoEngagePluginGeofence",
-      "version": "4.10.0",
+      "version": "5.00.0",
       "changelog": "CHANGELOG.md",
       "tagPrefix": "pluginGeofence-"
     }
