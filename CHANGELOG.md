@@ -1,8 +1,10 @@
-# Release Date
+# 03-09-2026
 
-## Release Version
+## 5.01.0
 
-- [minor] Declared the pod as a static framework. The MoEngage iOS SDK now links its app-only modules statically, and CocoaPods rejects a target using `use_frameworks!` whose transitive dependencies include statically linked binaries — without this, `pod install` fails for integrating apps.
+- Updated MoEngage-iOS-SDK to 11.01.0
+- Updated MoEngagePluginBase to 7.01.0
+- Declared the pod as a static framework. The MoEngage iOS SDK now links its app-only modules statically, and CocoaPods rejects a target using `use_frameworks!` whose transitive dependencies include statically linked binaries — without this, `pod install` fails for integrating apps.
 
 # 06-08-2026
 
