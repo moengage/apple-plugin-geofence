@@ -1,3 +1,10 @@
+# 16-09-2026
+
+## 5.02.0
+
+- Updated MoEngage-iOS-SDK to 11.02.0
+- Updated MoEngagePluginBase to 7.02.0
+
 # 03-09-2026
 
 ## 5.01.0
